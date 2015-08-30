@@ -35,6 +35,8 @@ h5 {
 .btn {
   font-size: 13px;
   border: solid 2px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase; }
@@ -47,6 +49,8 @@ h5 {
 .btn-white {
   font-size: 13px;
   border: solid 2px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
   border-radius: 40px;
   display: inline-block;
   border-color: #fff; }
@@ -58,6 +62,8 @@ h5 {
 .btn-fill {
   color: #fff;
   border: solid 2px #FF5274;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase;
@@ -172,98 +178,44 @@ ul li {
 Animations
 ========================================================================== */
 .pulse2 {
-  -webkit-animation-name: pulse2;
-          animation-name: pulse2;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear; }
-
-@-webkit-keyframes pulse2 {
-  0% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+  animation-name: pulse2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 @keyframes pulse2 {
   0% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    transform: scale(1.1); }
   50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
+    transform: scale(0.8); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    transform: scale(1); } }
 .floating-arrow {
-  -webkit-animation-name: floating-arrow;
-          animation-name: floating-arrow;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out; }
-
-@-webkit-keyframes floating-arrow {
-  from {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
-  65% {
-    -webkit-transform: translate(-50%, 15px);
-            transform: translate(-50%, 15px); }
-  to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); } }
+  animation-name: floating-arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
 
 @keyframes floating-arrow {
   from {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
+    transform: translate(-50%, 0); }
   65% {
-    -webkit-transform: translate(-50%, 15px);
-            transform: translate(-50%, 15px); }
+    transform: translate(-50%, 15px); }
   to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); } }
+    transform: translate(-50%, 0); } }
 .floating-logo {
-  -webkit-animation-name: floating-logo;
-          animation-name: floating-logo;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out; }
-
-@-webkit-keyframes floating-logo {
-  from {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
-  50% {
-    -webkit-transform: translate(-50%, 10px);
-            transform: translate(-50%, 10px); }
-  to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); } }
+  animation-name: floating-logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
 
 @keyframes floating-logo {
   from {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
+    transform: translate(-50%, 0); }
   50% {
-    -webkit-transform: translate(-50%, 10px);
-            transform: translate(-50%, 10px); }
+    transform: translate(-50%, 10px); }
   to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); } }
+    transform: translate(-50%, 0); } }
 /* ==========================================================================
 Waypoinsts
 ========================================================================== */
@@ -303,6 +255,8 @@ Navigation
   display: block;
   width: 35px;
   height: 3px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
   border-radius: 1px;
   background: #fff;
   cursor: pointer; }
@@ -314,6 +268,8 @@ Navigation
   bottom: -10px; }
 
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out; }
 
@@ -324,13 +280,17 @@ Navigation
   top: 0; }
 
 .nav-toggle.active span:before {
+  -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .nav-toggle.active span:after {
   top: 10px;
+  -moz-transform: translatey(-10px) rotate(-45deg);
   -ms-transform: translatey(-10px) rotate(-45deg);
+  -o-transform: translatey(-10px) rotate(-45deg);
   -webkit-transform: translatey(-10px) rotate(-45deg);
   transform: translatey(-10px) rotate(-45deg); }
 
@@ -340,8 +300,7 @@ Navigation
   right: 10px;
   top: 48px;
   visibility: hidden;
-  -webkit-transition: all 300ms ease-in-out;
-          transition: all 300ms ease-in-out; }
+  transition: all 300ms ease-in-out; }
 
 /* ==========================================================================
 Hero
@@ -349,6 +308,9 @@ Hero
 .hero {
   min-height: 750px;
   background: url("../img/hero.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position: relative; }
   .hero .down-arrow a {
@@ -365,8 +327,7 @@ Hero
     padding-top: 26%; }
 
 .navigation {
-  -webkit-transition: all 300ms ease-in-out;
-          transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   position: fixed;
   width: 100%;
   z-index: 999; }
@@ -383,8 +344,7 @@ header {
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  -webkit-transition: padding 300ms ease-in-out;
-          transition: padding 300ms ease-in-out; }
+  transition: padding 300ms ease-in-out; }
   header a {
     color: #fff;
     text-transform: uppercase;
@@ -417,8 +377,7 @@ header {
     position: absolute;
     right: 0;
     top: 41px;
-    -webkit-transition: all 300ms ease-in-out;
-            transition: all 300ms ease-in-out; }
+    transition: all 300ms ease-in-out; }
 
 .down-arrow {
   color: #fff;
@@ -426,9 +385,7 @@ header {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  transform: translateX(-50%); }
 
 /* ==========================================================================
 Intro
@@ -559,9 +516,7 @@ Features-stack
     position: absolute;
     bottom: -285px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    transform: translateX(-50%); }
 
 /* ==========================================================================
 .blog-intro
@@ -584,6 +539,8 @@ Features-stack
   .blog img {
     width: 100%;
     height: auto;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out; }
   .blog h2 {
@@ -602,6 +559,8 @@ Features-stack
       width: 100%;
       height: 100%;
       background-color: rgba(255, 255, 255, 0.5);
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -616,7 +575,9 @@ Features-stack
       top: 25px;
       right: 35px; }
   .blog .blog-img-wrap:hover img, .blog .blog-img-wrap:focus img {
+    -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
   .blog .blog-img-wrap:hover .overlay, .blog .blog-img-wrap:focus .overlay {
@@ -637,6 +598,9 @@ Features-stack
 ========================================================================== */
 .testimonial-slider {
   background: url("../img/testimonials-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   .testimonial-slider .avatar {
     width: 82px;
@@ -673,6 +637,8 @@ Sign up form
   width: 80%;
   height: 55px;
   margin: 0 auto 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   border: solid 1px #E6E9EA;
   text-align: left;
@@ -688,29 +654,25 @@ Sign up form
     position: absolute;
     top: 50%;
     left: 30px;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    transform: translateY(-50%); }
   .sign-up .signup-form .form-input-group i.fa-lock {
     font-size: 18px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     margin-left: 20px; }
   .sign-up .signup-form .form-input-group i.fa-envelope {
     font-size: 14px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     margin-left: 20px; }
   .sign-up .signup-form .form-input-group input {
     padding-left: 68px;
     width: 100%;
     height: 100%;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
     border-radius: 6px;
     border: none; }
   .sign-up .signup-form .form-input-group input::-webkit-input-placeholder {
