@@ -10,7 +10,13 @@
 
 Use it freely but please do not republish, distribute or sell "as-is". [Read more about our license.](http://tympanus.net/codrops/licensing/)
 
-## Credits 
+## Installation
+
+Make sure you have `gem install sass` and `gem install compass` ready to go.
+
+Then, to compile your sass, run `compass compile` which takes the info from your `config.rb` file to do everything properly.
+
+## Credits
 
 ### Bootstrap
 
@@ -32,11 +38,11 @@ Use it freely but please do not republish, distribute or sell "as-is". [Read mor
 
 [Animate.css](https://daneden.github.io/animate.css/) by Dan Eden
 
-### Font Awesome Icons 
+### Font Awesome Icons
 
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/) by Dave Gandy. Licensed under [MIT](http://opensource.org/licenses/mit-license.html)
 
-### Elegant Icons 
+### Elegant Icons
 
 [Elegant Icons](http://www.elegantthemes.com/blog/resources/elegant-icon-font/) by Elegant Themes. Licensed under [MIT](http://opensource.org/licenses/mit-license.html)
 
@@ -47,5 +53,3 @@ Follow Pete: [Twitter](https://twitter.com/peterfinlan), [Dribbble](http://www.d
 Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/pages/Codrops/159107397912), [Google+](https://plus.google.com/101095823814290637419), [GitHub](https://github.com/codrops), [Pinterest](http://www.pinterest.com/codrops/)
 
 [© Codrops 2015](http://www.codrops.com)
-
-
