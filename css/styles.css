@@ -103,6 +103,15 @@ Global Styles
 .no-margin {
   margin: 0; }
 
+.plan-box {
+  display: flex;
+  align-items: center; }
+  .plan-box div p {
+    margin-bottom: 0;
+    padding-top: 20px;
+    font-size: 3em;
+    text-align: center; }
+
 a {
   color: #d50000;
   -webkit-transition-timing-function: ease;
@@ -352,8 +361,7 @@ header {
     header a.login {
       margin-right: 20px; }
   header .logo {
-    display: inline-block;
-    font-size: 3em; }
+    display: inline-block; }
   header ul.primary-nav {
     margin: 0 0 0 75px;
     padding: 0; }

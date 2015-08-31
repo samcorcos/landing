@@ -23,6 +23,19 @@ Global Styles
 .no-margin {
   margin: 0;
 }
+.plan-box {
+  display: flex;
+  align-items: center;
+  div {
+    p {
+      margin-bottom:0;
+      padding-top:20px;
+      font-size:3em;
+      text-align:center;
+    }
+  }
+}
+
 a {
   color: $accent-color;
   -webkit-transition-timing-function: ease;
