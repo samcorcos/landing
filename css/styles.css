@@ -520,7 +520,7 @@ Features-stack
   .hero-strip .btn {
     margin-top: 10px; }
   .hero-strip .logo-placeholder {
-    width: 230px;
+    width: auto;
     height: 230px;
     position: absolute;
     bottom: -285px;
