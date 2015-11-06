@@ -23,18 +23,6 @@ Global Styles
 .no-margin {
   margin: 0;
 }
-.plan-box {
-  display: flex;
-  align-items: center;
-  div {
-    p {
-      margin-bottom:0;
-      padding-top:20px;
-      font-size:3em;
-      text-align:center;
-    }
-  }
-}
 
 a {
   color: $accent-color;
@@ -491,7 +479,6 @@ Features-stack
 ========================================================================== */
 .hero-strip {
   background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
-  padding-bottom: 190px;
   position: relative;
 
   i {
@@ -513,13 +500,31 @@ Features-stack
   .btn {
     margin-top: 10px;
   }
-  .logo-placeholder {
-    width: auto;
-    height: 230px;
-    position: absolute;
-    bottom: -285px;
-    left: 50%;
-    transform: translateX(-50%);
+  .app-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .app-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+  .plan-box {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 400px;
+    display: block;
+    margin: auto;
+    p {
+      display: inline;
+      color: white;
+      font-size:3em;
+      text-align:center;
+  }
   }
 }
 

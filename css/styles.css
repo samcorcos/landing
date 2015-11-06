@@ -103,15 +103,6 @@ Global Styles
 .no-margin {
   margin: 0; }
 
-.plan-box {
-  display: flex;
-  align-items: center; }
-  .plan-box div p {
-    margin-bottom: 0;
-    padding-top: 20px;
-    font-size: 3em;
-    text-align: center; }
-
 a {
   color: #d50000;
   -webkit-transition-timing-function: ease;
@@ -501,7 +492,6 @@ Features-stack
 ========================================================================== */
 .hero-strip {
   background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
-  padding-bottom: 190px;
   position: relative; }
   .hero-strip i {
     font-family: "Nunito", sans-serif;
@@ -518,13 +508,28 @@ Features-stack
     color: #ACB1B4; }
   .hero-strip .btn {
     margin-top: 10px; }
-  .hero-strip .logo-placeholder {
-    width: auto;
-    height: 230px;
-    position: absolute;
-    bottom: -285px;
-    left: 50%;
-    transform: translateX(-50%); }
+  .hero-strip .app-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .hero-strip .app-list .app-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: white; }
+  .hero-strip .plan-box {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 400px;
+    display: block;
+    margin: auto; }
+    .hero-strip .plan-box p {
+      display: inline;
+      color: white;
+      font-size: 3em;
+      text-align: center; }
 
 /* ==========================================================================
 .blog-intro
