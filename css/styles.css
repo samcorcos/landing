@@ -83,10 +83,10 @@ h5 {
 .btn-margin-right {
   margin-right: 20px; }
 
-section.intro, section.features-extra, section.sign-up {
+section.intro, section.features-facebook, section.sign-up {
   background: #fff; }
 
-section.features, section.blog-intro, section.blog {
+section.features-tinder, section.blog-intro, section.blog {
   background: #F3F4F8; }
 
 /* ==========================================================================
@@ -418,6 +418,10 @@ Intro
 /* ==========================================================================
 Features-stack
 ========================================================================== */
+.features-facebook {
+  z-index: 2;
+  background-color: white; }
+
 .features {
   position: relative; }
   .features p {
@@ -455,6 +459,10 @@ Features-stack
   .features ul.features-stack li:last-child {
     padding-bottom: 0px;
     border-bottom: none; }
+  .features ul.features-stack .btn {
+    width: 140px;
+    display: block;
+    margin: auto; }
   .features .ipad-wrap {
     width: 706px;
     height: 1002px;
@@ -479,28 +487,19 @@ Features-stack
 .devices {
   position: relative; }
 
-/* ==========================================================================
-.features-extra
-========================================================================== */
-.features-extra {
-  position: relative;
-  z-index: 3; }
-  .features-extra .btn {
-    margin-top: 20px; }
-  .features-extra .macbook-wrap {
-    position: absolute;
-    width: 916px;
-    height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
-    top: 114px;
-    z-index: 4;
-    left: 50%; }
+.macbook-wrap {
+  position: absolute;
+  width: 916px;
+  height: 540px;
+  background: url("../img/macbook-pro.png") no-repeat center center;
+  top: 114px;
+  z-index: 4;
+  left: 45%; }
 
 /* ==========================================================================
 .hero-strip
 ========================================================================== */
 .hero-strip {
-  margin-top: 120px;
   background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
   padding-bottom: 190px;
   position: relative; }
