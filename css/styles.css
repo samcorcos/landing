@@ -512,8 +512,8 @@ Features-stack
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-top: 90px;
+    padding-bottom: 90px; }
     .hero-strip .app-list .app-icon {
       height: 50px;
       width: 50px;
