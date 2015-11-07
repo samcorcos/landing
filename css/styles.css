@@ -1156,3 +1156,5 @@ Workflow
   .workflow-item p {
     font-size: 2em;
     text-align: left; }
+  .workflow-item img {
+    transform: scale(2, 2); }
